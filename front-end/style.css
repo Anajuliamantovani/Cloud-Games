@@ -4,12 +4,24 @@
 
 .corCabecalho{
     background-color: rgb(10, 22, 32);
+    border-color: rgb(10, 22, 32);  
+}
+
+.corLista{
+    background-color: rgb(10, 22, 32);
+    border-color: rgb(10, 22, 32);  
 }
 
 .corCampos{
     background-color: rgb(18, 40, 58);
     border-color: rgb(18, 40, 58);  
     box-shadow: 0 0 0 0.25rem rgba(18, 40, 58, 0.25); 
+}
+
+.corLista:hover {
+    background-color: rgb(53, 149, 228);
+    border-color: rgb(61, 138, 201);  
+    color: #fff; 
 }
 
 .corCampos:focus {
@@ -24,13 +36,51 @@
 }
 
 .bordaCustomizada {
-  border: 5px solid rgb(10, 22, 32); 
+  border: 15px solid rgb(10, 22, 32);
+  border-left-width: 50px;
+}
+
+.bordaFinalCustomizada {
+  border: 20px solid rgb(10, 22, 32);
+  border-right-width: 50px;
+}
+
+.pequeno-espacamento {
+  padding-left: 5px;  
+  padding-right: 5px; 
+}
+
+.corCabecalho {
+  background-color: rgb(10, 22, 32); 
+}
+
+.dropdown:hover .dropdown-toggle {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(13, 110, 253, 0.5); 
+  color: #fff;
+}
+
+.dropdown-toggle.show {
+    background-color: #0d6efd; 
+   color: #fff;
+}
+.dropdown-menu.show {
+  background-color: #0f2d5a;
+  color: #fff;
+}
+
+.borda-inferior-branca:hover {
+  border-bottom: 2px solid white;
 }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0px 1000px #102232 inset; /* Cor de fundo que você quer */
-  -webkit-text-fill-color: #fff; /* Cor do texto da sugestão */
+  -webkit-box-shadow: 0 0 0px 1000px #102232 inset; 
+  -webkit-text-fill-color: #fff; 
 }
