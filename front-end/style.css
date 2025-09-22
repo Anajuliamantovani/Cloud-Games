@@ -1,0 +1,36 @@
+.corFundo{
+    background-color: rgb(23, 52, 77);
+}
+
+.corCabecalho{
+    background-color: rgb(10, 22, 32);
+}
+
+.corCampos{
+    background-color: rgb(18, 40, 58);
+    border-color: rgb(18, 40, 58);  
+    box-shadow: 0 0 0 0.25rem rgba(18, 40, 58, 0.25); 
+}
+
+.corCampos:focus {
+    background-color: rgb(18, 40, 58);
+    border-color: rgb(18, 40, 58);  
+    box-shadow: 0 0 0 0.25rem rgba(18, 40, 58, 0.25); 
+    color: #fff; 
+}
+
+.comtagemCompra{
+    color: aqua;
+}
+
+.bordaCustomizada {
+  border: 5px solid rgb(10, 22, 32); 
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px #102232 inset; /* Cor de fundo que você quer */
+  -webkit-text-fill-color: #fff; /* Cor do texto da sugestão */
+}
