@@ -1,0 +1,80 @@
+body {
+    min-height: 100vh;
+    background-image: url('../Telas/background.jpg');
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-meio {
+    width: 120%;
+    max-width: 400px; 
+    padding: 3rem;
+    background-color: #121A2B; 
+    border-radius: 1rem; 
+    border: 1px solid #374151;
+}
+
+.login-logo {
+    width: 400px;
+    height: auto;
+}
+
+/* Estilo dos campos de texto */
+.form-control {
+    background-color: #374151;
+    border: 1px solid #4b5563;
+    color: #f8f9fa;
+} 
+
+.form-control::placeholder {
+    color: #9ca3af;
+}
+
+.form-control:focus {
+    background-color: #374151;
+    border-color: #0d6efd; 
+    color: #f8f9fa;
+}
+
+/* Links */
+.forgot-password, .login-card a {
+    color: #60a5fa;
+}
+
+.form-check-label {
+    color: #ffffff;
+}
+
+.forgot-password:hover, .login-card a:hover {
+    text-decoration: underline;
+}
+
+.divisor {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #9ca3af;
+}
+
+.divisor::before, .divisor::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #4b5563;
+}
+
+.divisor:not(:empty)::before { margin-right: .5em; }
+.divisor:not(:empty)::after { margin-left: .5em; }
+
+.social-buttons .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    font-size: 1.25rem;
+    margin: 0 0.5rem;
+}
+.btn-google { background-color: #fff; color: #DB4437; }
+.btn-discord { background-color: #5865F2; color: #fff; }
+.btn-steam { background-color: #1b2838; color: #fff; }
+
+.cadastro-texto {
+    color: #ffffff;
+}
