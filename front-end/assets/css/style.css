@@ -1,10 +1,10 @@
 .corFundo{
-    background-color: rgb(23, 52, 77);
+    background-color: #121A2B;
 }
 
 .corCabecalho{
-    background-color: rgb(10, 22, 32);
-    border-color: rgb(10, 22, 32);  
+    background-color: #121A2B; 
+    box-shadow: 0 0 0 0.025rem #000000;
 }
 
 .corLista{
@@ -13,35 +13,33 @@
 }
 
 .corCampos{
-    background-color: rgb(18, 40, 58);
-    border-color: rgb(18, 40, 58);  
-    box-shadow: 0 0 0 0.25rem rgba(18, 40, 58, 0.25); 
+    background-color: #25314B;
+    border-color: #25314B;  
 }
 
 .corLista:hover {
-    background-color: rgb(53, 149, 228);
-    border-color: rgb(61, 138, 201);  
+    background-color: #0d6efd;
+    border-color: #0a5cd6;  
     color: #fff; 
 }
 
 .corCampos:focus {
-    background-color: rgb(18, 40, 58);
-    border-color: rgb(18, 40, 58);  
-    box-shadow: 0 0 0 0.25rem rgba(18, 40, 58, 0.25); 
+    background-color: #25314B;
+    box-shadow: 0 0 0 0.05rem #0d6efd; 
     color: #fff; 
 }
 
 .comtagemCompra{
-    color: aqua;
+    color: #0d6efd;
 }
 
 .bordaCustomizada {
-  border: 15px solid rgb(10, 22, 32);
+  border: 15px solid #121A2B;
   border-left-width: 50px;
 }
 
 .bordaFinalCustomizada {
-  border: 20px solid rgb(10, 22, 32);
+  border: 20px solid #121A2B;
   border-right-width: 50px;
 }
 
@@ -50,17 +48,13 @@
   padding-right: 5px; 
 }
 
-.corCabecalho {
-  background-color: rgb(10, 22, 32); 
-}
-
 .dropdown:hover .dropdown-toggle {
   background-color: #0d6efd;
   color: #fff;
 }
 
 .dropdown-item:hover {
-  background-color: rgba(13, 110, 253, 0.5); 
+  background-color: #0652c3; 
   color: #fff;
 }
 
