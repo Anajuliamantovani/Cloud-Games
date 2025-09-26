@@ -1,5 +1,6 @@
 .corFundo{
     background-color: #121A2B;
+    border-color: #121A2B;  
 }
 
 .corCabecalho{
@@ -15,6 +16,11 @@
 .corCampos{
     background-color: #25314B;
     border-color: #25314B;  
+}
+
+.corLinha{
+    border-color: #ff0808;  
+    background-color: #00ff00;
 }
 
 .corLista:hover {
@@ -88,25 +94,3 @@ input:-webkit-autofill:active {
 .corRodape{
     background-color: #374975;
     border-color: #374975;  
-}
-.novidades {
-  position: relative;
-  /* Essencial para criar o contexto de posicionamento */
-  display: block;
-  /* Garante que o container se ajuste à imagem */
-}
-
-.overlay-button {
-  position: absolute;
-  /* Posiciona o botão em relação ao .image-container */
-  top: 75%;
-  left: 72.6%;
-  transform: translate(-50%, -50%);
-
-  /* Estilos opcionais para o botão se destacar */
-  background-color: #820018;
-  /* Fundo branco semi-transparente */
-  color: #fff;
-  border: none;
-  font-weight: bold;
-}
