@@ -78,3 +78,35 @@ input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0px 1000px #102232 inset; 
   -webkit-text-fill-color: #fff; 
 }
+
+.minha-borda {
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
+  border-bottom-color: #ffffff;
+}
+
+.corRodape{
+    background-color: #374975;
+    border-color: #374975;  
+}
+.novidades {
+  position: relative;
+  /* Essencial para criar o contexto de posicionamento */
+  display: block;
+  /* Garante que o container se ajuste à imagem */
+}
+
+.overlay-button {
+  position: absolute;
+  /* Posiciona o botão em relação ao .image-container */
+  top: 75%;
+  left: 72.6%;
+  transform: translate(-50%, -50%);
+
+  /* Estilos opcionais para o botão se destacar */
+  background-color: #820018;
+  /* Fundo branco semi-transparente */
+  color: #fff;
+  border: none;
+  font-weight: bold;
+}
