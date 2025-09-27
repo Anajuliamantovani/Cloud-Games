@@ -15,3 +15,15 @@ dropdowns.forEach(dropdown => {
     }
   });
 });
+
+fetch('cabecalho.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+fetch('rodape.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('rodape').innerHTML = data;
+            });

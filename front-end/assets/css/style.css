@@ -180,3 +180,42 @@ input:-webkit-autofill:active {
     padding-left: 10px !important;
     padding-right: 10px !important;   
 }
+
+/* Cor de base para a fusão (ajuste para a cor do seu rodapé!) */
+:root {
+  --cor-de-fusao: #121A2B; 
+}
+
+.image-fade-container {
+    /* Define o contexto para posicionar a camada de degradê */
+    position: relative;
+    /* Garante que a imagem se ajuste */
+    width: 100%;
+}
+
+.image-fade-container img {
+    /* Garante que a imagem preencha o container */
+    width: 100%;
+    display: block;
+}
+
+/* Cria o elemento de degradê que será sobreposto */
+.image-fade-container::after {
+    content: '';
+    /* Posiciona a camada na parte inferior do container */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Altura da área de degradê (ajuste conforme o desejado) */
+    height: 150px; 
+    
+    /* CRIA O EFEITO DEGRADÊ: Transparente para a cor de fusão */
+    background: linear-gradient(
+        to bottom, /* Direção: de cima para baixo */
+        rgba(0, 0, 0, 0) 0%, /* Início (Topo): Transparente */
+        var(--cor-de-fusao) 100% /* Fim (Baixo): Cor Sólida */
+    );
+    /* Garante que o efeito fique acima da imagem */
+    z-index: 10; 
+}
