@@ -18,6 +18,10 @@
     border-color: #25314B;  
 }
 
+.corCampos::placeholder{
+    color: #9ca3af;  
+}
+
 .corLinha{
     border-color: #ff0808;  
     background-color: #00ff00;
