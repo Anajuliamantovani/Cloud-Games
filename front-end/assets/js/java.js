@@ -27,3 +27,7 @@ fetch('rodape.html')
             .then(data => {
                 document.getElementById('rodape').innerHTML = data;
             });
+
+function redirecionarPagina() {
+    window.location.href = 'index.html';
+}
