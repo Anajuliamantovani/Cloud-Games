@@ -1,0 +1,350 @@
+.corFundo{
+    background-color: #121A2B;
+    border-color: #121A2B;  
+}
+
+.corCabecalho{
+    background-color: #121A2B; 
+    box-shadow: 0 0 0 0.025rem #000000;
+}
+
+.corLista{
+    background-color: rgb(10, 22, 32);
+    border-color: rgb(10, 22, 32);  
+}
+
+.corCampos{
+    background-color: #25314B;
+    border-color: #25314B;  
+}
+
+.corLinha{
+    border-color: #ff0808;  
+    background-color: #00ff00;
+}
+
+.corLista:hover {
+    background-color: #0d6efd;
+    border-color: #0a5cd6;  
+    color: #fff; 
+}
+
+.corCampos:focus {
+    background-color: #25314B;
+    box-shadow: 0 0 0 0.05rem #0d6efd; 
+    color: #fff; 
+}
+
+.comtagemCompra{
+    color: #0d6efd;
+}
+
+.bordaCustomizada {
+  border: 15px solid #121A2B;
+  border-left-width: 50px;
+}
+
+.bordaFinalCustomizada {
+  border: 20px solid #121A2B;
+  border-right-width: 50px;
+}
+
+.pequeno-espacamento {
+  padding-left: 5px;  
+  padding-right: 5px; 
+}
+
+.dropdown:hover .dropdown-toggle {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.dropdown-item:hover {
+  background-color: #0652c3; 
+  color: #fff;
+}
+
+.dropdown-toggle.show {
+    background-color: #0d6efd; 
+   color: #fff;
+}
+.dropdown-menu.show {
+  background-color: #0f2d5a;
+  color: #fff;
+}
+
+.borda-inferior-branca:hover {
+  border-bottom: 2px solid white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px #102232 inset; 
+  -webkit-text-fill-color: #fff; 
+}
+
+.minha-borda {
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
+  border-bottom-color: #ffffff;
+}
+
+.corRodape{
+    background-color: #1a2338;
+    border-color: #374975;  
+}
+
+.novidades {
+  position: relative;
+  display: block;
+}
+
+.overlay-button{
+  position: absolute;
+  top: 75%;
+  left: 72.6%;
+  transform: translate(-50%, -50%);
+  background-color: #820018;
+  color: #fff;
+  font-weight: bold;
+}
+
+.game-card {
+    background-color: #1e232f; 
+    border-radius: 8px;
+    color: #ffffff; 
+    overflow: hidden; /* faz com que a imagem não vaze das bordas arredondadas */
+    height: 100%; 
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.badge-sale {
+    background-color: #e53935; /* Um tom de vermelho */
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 0.4em 0.7em;
+}
+
+/* Efeito de hover para destacar o card */
+.game-card:hover {
+    transform: scale(1.03); /* Aumenta levemente o tamanho */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Adiciona uma sombra */
+}
+
+/* Garante que a imagem se ajuste bem */
+.game-card .card-img-top {
+    aspect-ratio: 16/9; /* Proporção de cinema, comum para capas de jogos */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+/* Título do card */
+.game-card .card-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    min-height: 44px; /* Garante espaço para até duas linhas de título */
+}
+
+/* Ícones das plataformas */
+.platform-icons {
+    font-size: 0.9rem;
+    color: #adb5bd; /* Uma cor cinza claro para não tirar o foco */
+}
+
+/* Seção de preço */
+.preco .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Badge (selo) de desconto customizado */
+.badge-sale {
+    background-color: #e53935; /* Um tom de vermelho */
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 0.4em 0.7em;
+}
+
+.meu-espacamento-direito {
+    padding-right: 10px !important; 
+}
+
+.meu-espacamento-esquerdo {
+    padding-left: 10px !important; 
+}
+
+.meu-espacamento-centro {
+    padding-left: 10px !important;
+    padding-right: 10px !important;   
+}
+
+/* Cor de base para a fusão (ajuste para a cor do seu rodapé!) */
+:root {
+  --cor-de-fusao: #121A2B; 
+}
+
+.image-fade-container {
+    /* Define o contexto para posicionar a camada de degradê */
+    position: relative;
+    /* Garante que a imagem se ajuste */
+    width: 100%;
+}
+
+.image-fade-container img {
+    /* Garante que a imagem preencha o container */
+    width: 100%;
+    display: block;
+}
+
+/* Cria o elemento de degradê que será sobreposto */
+.image-fade-container::after {
+    content: '';
+    /* Posiciona a camada na parte inferior do container */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Altura da área de degradê (ajuste conforme o desejado) */
+    height: 150px; 
+    
+    /* CRIA O EFEITO DEGRADÊ: Transparente para a cor de fusão */
+    background: linear-gradient(
+        to bottom, /* Direção: de cima para baixo */
+        rgba(0, 0, 0, 0) 0%, /* Início (Topo): Transparente */
+        var(--cor-de-fusao) 100% /* Fim (Baixo): Cor Sólida */
+    );
+    /* Garante que o efeito fique acima da imagem */
+    z-index: 10; 
+}
+
+.corCardGame{
+    background-color: #2a3349;
+    border-color: #2a3349;  
+}
+
+
+.carousel-image {
+    /* Mantenha uma proporção fixa, se necessário, ou deixe fluir */
+    object-fit: cover; 
+    height: auto; /* Remove altura fixa */
+    border-radius: 8px; /* Arredondamento para o carrossel principal */
+}
+
+/* Estilo para a miniatura (opcional: faz a imagem da miniatura parecer um botão) */
+.thumbnail-link {
+    display: block;
+    cursor: pointer;
+    border: 3px solid transparent; /* Borda transparente padrão */
+    transition: border-color 0.2s ease;
+    /* Opacidade para simular o efeito do Steam quando não está ativo */
+    opacity: 0.7; 
+}
+
+/* Estilo da miniatura quando ela está ativa/selecionada */
+.thumbnail-link:hover {
+    border-color: #007bff; /* Cor de destaque (azul primário do Bootstrap) */
+    opacity: 1; /* Opacidade total quando ativo ou no hover */
+}
+
+
+
+/* Card principal do carrinho */
+.cart-card-custom { 
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.cart-card-custom .card-header-custom,
+.cart-card-custom .card-footer-custom {
+    background-color: #25314B;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #007bff;
+}
+
+.cart-card-custom .card-footer-custom {
+    background-color: #25314B;
+    border-bottom: none;
+    border-top: 1px solid #007bff;
+}
+
+.cart-card-custom .card-body {
+    background-color: #25314B;
+    padding: 1.5rem;
+}
+
+/* Detalhes do produto no carrinho */
+.product-img {
+    border-radius: 4px;
+    max-width: 80px;
+}
+
+.product-price, .subtotal-price {
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+/* Card de Formas de Pagamento */
+.payment-card-custom {
+    background-color: #25314B; 
+    border-radius: 8px;
+}
+
+.payment-option-custom {
+    border: 1px solid transparent; /* Bordas transparentes por padrão */
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.payment-option-custom:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilo da opção de pagamento ativa */
+.payment-option-custom.active {
+    border-color: #0d6efd; /* Azul primário do Bootstrap para destaque */
+    background-color: #121A2B; /* Sua classe .corFundo para dar o efeito de seleção */
+}
+
+/* Customização dos Radio Buttons */
+.payment-option-custom .form-check {
+    padding-left: 0;
+    align-items: center;
+}
+
+.payment-option-custom .form-check-input {
+    background-color: #121A2B; /* Fundo do radio button */
+    border-color: #30363d; /* Borda do radio button */
+    margin-top: 0;
+    margin-right: 1rem;
+    float: none;
+}
+
+.payment-option-custom .form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.payment-option-custom .payment-icons {
+    padding-left: 2.5rem; /* Alinha os ícones com o texto */
+}
+
+.payment-option-custom .payment-icons img {
+    max-width: 100%;
+}
+
+.remove-link {
+    color: #8b949e; /* Cor cinza-claro para não chamar muita atenção */
+    text-decoration: underline;
+    font-size: 0.9rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.remove-link:hover {
+    color: #ffffff; /* Cor um pouco mais clara ao passar o mouse */
+}
