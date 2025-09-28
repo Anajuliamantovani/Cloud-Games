@@ -92,7 +92,7 @@ input:-webkit-autofill:active {
 }
 
 .corRodape{
-    background-color: #374975;
+    background-color: #1a2338;
     border-color: #374975;  
 }
 
@@ -218,4 +218,33 @@ input:-webkit-autofill:active {
     );
     /* Garante que o efeito fique acima da imagem */
     z-index: 10; 
+}
+
+.corCardGame{
+    background-color: #2a3349;
+    border-color: #2a3349;  
+}
+
+
+.carousel-image {
+    /* Mantenha uma proporção fixa, se necessário, ou deixe fluir */
+    object-fit: cover; 
+    height: auto; /* Remove altura fixa */
+    border-radius: 8px; /* Arredondamento para o carrossel principal */
+}
+
+/* Estilo para a miniatura (opcional: faz a imagem da miniatura parecer um botão) */
+.thumbnail-link {
+    display: block;
+    cursor: pointer;
+    border: 3px solid transparent; /* Borda transparente padrão */
+    transition: border-color 0.2s ease;
+    /* Opacidade para simular o efeito do Steam quando não está ativo */
+    opacity: 0.7; 
+}
+
+/* Estilo da miniatura quando ela está ativa/selecionada */
+.thumbnail-link:hover {
+    border-color: #007bff; /* Cor de destaque (azul primário do Bootstrap) */
+    opacity: 1; /* Opacidade total quando ativo ou no hover */
 }
