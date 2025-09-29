@@ -350,3 +350,81 @@ input:-webkit-autofill:active {
 .remove-link:hover {
     color: #ffffff; /* Cor um pouco mais clara ao passar o mouse */
 }
+
+.botaoInvisivel{
+    border-color: #00000000;
+    background-color: #00000000;
+}
+
+/* 1. Mudar a cor de fundo e do texto quando o botão da aba está ativo */
+.nav-tabs .nav-link.active {
+    background-color: #f8f9fa00; /* Defina a cor de fundo que você realmente quer */
+    border-color: #00000000;
+}
+
+/* 2. Remover o Efeito de Foco (o "brilho" branco) */
+/* O Bootstrap usa o pseudo-elemento ':focus' para o brilho */
+.nav-tabs .nav-link:focus, 
+.nav-tabs .nav-link:active {
+    /* O 'box-shadow' é geralmente o responsável pelo brilho branco. */
+    box-shadow: none !important; 
+    border-color: #00000000;
+    /* Garante que não haja bordas indesejadas */
+    border-color: transparent !important; 
+    
+    /* Remove o 'outline' (contorno) que pode aparecer ao focar */
+    outline: 0 !important;
+}
+
+/* Remove o contorno ao passar o mouse sobre QUALQUER nav-link */
+.nav-tabs .nav-link:hover {
+    outline: none !important; /* Remove o contorno padrão do navegador */
+    box-shadow: none !important; /* Remove qualquer sombra/brilho que pareça um contorno */
+    border-color: transparent !important; /* Garante que nenhuma borda apareça */
+}
+
+/* Também é uma boa ideia garantir que o estado ativo/focado não tenha esse contorno */
+.nav-tabs .nav-link.active:focus,
+.nav-tabs .nav-link:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+}
+
+/* Se por algum motivo o foco ainda gerar um contorno, este seletor é mais genérico */
+.nav-link:focus-visible { /* pseudo-classe para quando o foco é visível (ex: via teclado) */
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Seletor do contêiner principal de abas do Bootstrap */
+.nav-tabs {
+    /* Esta regra remove a borda inferior aplicada ao <ul> principal */
+    border-bottom: none !important; 
+}
+
+html, body {
+    /* Garante que o body ocupe toda a altura da tela */
+    height: 100%; 
+    margin: 0; /* Remove margens padrão que podem atrapalhar */
+}
+
+body {
+    /* 1. Define o body como um contêiner flexível */
+    display: flex;
+    
+    /* 2. Empilha os filhos verticalmente (header, main, footer) */
+    flex-direction: column; 
+}
+
+/* O elemento que contém o conteúdo da sua aba */
+.page-content {
+    /* 3. Esta é a regra MÁGICA: faz o conteúdo principal crescer 
+       e ocupar todo o espaço vertical disponível, empurrando o footer para baixo. */
+    flex-grow: 1; 
+}
+
+/* Você pode precisar garantir que a altura mínima do conteúdo da aba também cresça */
+.tab-content {
+    min-height: 100%;
+}
