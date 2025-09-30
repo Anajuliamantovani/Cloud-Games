@@ -441,5 +441,51 @@ body {
     /* Define um fundo branco levemente transparente ao passar o mouse */
     background-color: #0b152b; 
     color: #2d4068;
+}
 
+/* Corpo principal do card */
+.order-card-custom {
+    background-color: #25314B; /* Fundo grafite do card */ /* Borda sutil um pouco mais clara */
+    border-radius: 0.375rem;
+}
+
+/* Cabeçalho do card */
+.order-card-header-custom {
+    background-color: #25314B; /* Tom ainda mais escuro para o cabeçalho */
+    border-bottom: 1px solid #0d6efd;
+}
+
+.order-card-header-custom small {
+    color: #a0aec0; /* Cor cinza para o texto menor */
+}
+
+.order-card-header-custom h6 {
+    color: #e2e8f0; /* Cor branca clara para a data e o preço */
+}
+
+
+/* Título do jogo dentro do card */
+.order-card-custom .card-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* Estilo para os botões "Visualizar" e "Comprar" */
+.btn-visualizar,
+.btn-comprar {
+    background-color: #0d6efd; /* Azul primário vibrante da imagem */
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Efeito hover para os botões */
+.btn-visualizar:hover,
+.btn-comprar:hover {
+    background-color: #044fc0; /* Azul um pouco mais escuro no hover */
+    color: white;
 }
