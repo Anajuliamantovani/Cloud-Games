@@ -428,3 +428,18 @@ body {
 .tab-content {
     min-height: 100%;
 }
+/*botaozinho de editar perfil*/
+.edit-perfil {
+    color: #2d4068;  
+    background-color: transparent;
+
+    /* Adiciona uma transição suave para o efeito hover */
+    transition: background-color 0.3s ease;
+}
+
+.edit-perfil:hover {
+    /* Define um fundo branco levemente transparente ao passar o mouse */
+    background-color: #0b152b; 
+    color: #2d4068;
+
+}
