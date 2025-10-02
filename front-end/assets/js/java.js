@@ -35,11 +35,11 @@ fetch('cabecalho.html')
 
         // Só executa o código de busca se o campo existir
         if (searchInput) {
-            searchInput.addEventListener('input', function() {
+            searchInput.addEventListener('input', function () {
                 const searchTerm = searchInput.value.trim().toLowerCase();
                 const gameCards = document.querySelectorAll('.game-card');
 
-                gameCards.forEach(function(card) {
+                gameCards.forEach(function (card) {
                     const gameTitleElement = card.querySelector('.game-title');
                     if (gameTitleElement) {
                         const gameTitle = gameTitleElement.textContent.toLowerCase();
@@ -84,4 +84,83 @@ if (paymentOptions.length > 0) {
             }
         });
     });
+}
+
+
+function iniciarPesquisa() {
+    const termo = document.getElementById('searchInput').value.trim();
+    const termoCodificado = encodeURIComponent(termo);
+
+    if (termoCodificado) {
+        // **MUDANÇA AQUI:** Redireciona para buscarJogos.html com o termo 'q'
+        window.location.href = `buscaJogos.html?q=${termoCodificado}`;
+    } else {
+        // Se a busca estiver vazia, pode-se ir para a página de busca para mostrar todos
+        window.location.href = `buscaJogos.html`;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Inicia a busca (fetch) do arquivo JSON
+    fetch('../caminho/para/dadosJogos.json')
+        .then(response => {
+            // Verifica se a resposta foi bem-sucedida
+            if (!response.ok) {
+                throw new Error('Erro ao carregar os dados dos jogos: ' + response.statusText);
+            }
+            // Converte a resposta para um objeto JavaScript (JSON)
+            return response.json();
+        })
+        .then(JOGOS_DATA => {
+            // Os dados JOGOS_DATA agora estão disponíveis. Chamamos a função principal.
+            iniciarCarregamento(JOGOS_DATA);
+        })
+        .catch(error => {
+            console.error("Houve um problema com a operação fetch:", error);
+            // Mostrar uma mensagem de erro na tela para o usuário, se necessário
+        });
+});
+
+// A função que continha sua lógica principal, agora recebe os dados
+function iniciarCarregamento(JOGOS_DATA) {
+    // 2. Extrai o parâmetro da URL
+    const params = new URLSearchParams(window.location.search);
+    const termoPesquisado = params.get('jogo');
+
+    if (termoPesquisado) {
+        const termoFormatado = termoPesquisado.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+
+        // 3. Busca o jogo no array de dados que acabamos de carregar
+        const jogoEncontrado = JOGOS_DATA.find(jogo =>
+            jogo.id === termoFormatado ||
+            jogo.titulo.toLowerCase().replace(/[^a-z0-9]+/g, '-').includes(termoFormatado)
+        );
+
+        // 4. Carrega o conteúdo na página, exatamente como antes
+        if (jogoEncontrado) {
+            carregarDetalhesJogo(jogoEncontrado);
+        } else {
+            document.getElementById('tituloJogo').textContent = "Jogo não encontrado.";
+            // Oculta ou exibe mensagem de erro
+        }
+    }
+}
+
+// Sua função carregarDetalhesJogo permanece inalterada
+function carregarDetalhesJogo(jogo) {
+    // ... lógica de preenchimento (tituloJogo, precoJogo, etc.)
 }
