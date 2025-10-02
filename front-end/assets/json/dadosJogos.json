@@ -1,0 +1,30 @@
+[
+    {
+        "id": "metaphor-re-fantazio",
+        "titulo": "Metaphor Re Fantazio",
+        "preco": "R$ 299,00",
+        "banner": "../assets/img/metaphor/banner.jpg",
+        "descricao": "Aberto depois do assassinato...",
+        "plataformas": ["PC", "PlayStation"],
+        "lancamento": "24/10/2024",
+        "modoJogo": "SimglePlayer",
+        "Categoria": "SimglePlayer",
+        "RequisitosMinimos": "Requer um processador e sistema operacional de 64 bits SO: Windows 10 Processador: Intel Core i5-3470 or AMD FX-6300 Memória: 6 GB de RAM Placa de vídeo: NVIDIA GeForce GTX 750 Ti, 4GB or AMD Radeon R7 360, 4GB or Intel Arc A310, 4GB DirectX: Versão 11 Armazenamento: 93 GB de espaço disponível Outras observações: 720p @ 30 FPS. A CPU with AVX support is required.",
+        "RequisitosRecomendados": "Requer um processador e sistema operacional de 64 bits SO: Windows 10 Processador: Intel Core i5-7600 or Ryzen 5 2600 Memória: 8 GB de RAM Placa de vídeo: NVIDIA GeForce GTX 970, 4GB or AMD Radeon RX 480, 4GB or Intel Arc A380, 6GB DirectX: Versão 11 Armazenamento: 93 GB de espaço disponível Outras observações: 1080p @ 60 FPS. A CPU with AVX support is required."
+    },
+    {
+        "id": "hollow-knight",
+        "titulo": "Hollow Knight",
+        "preco": "R$ 49,99",
+        "banner": "../assets/img/Hollow Knight.avif",
+        "descricao": "Aventure-se por Hallownest...",
+        "plataformas": ["PC", "Nintendo Switch"],
+        "lancamento": "24/10/2024",
+        "desenvolvedora": "ATLUS",
+        "Distribuidora": "SEGA",
+        "modoJogo": "SimglePlayer",
+        "Categoria": "SimglePlayer",
+        "RequisitosMinimos": "Requer um processador e sistema operacional de 64 bits SO: Windows 10 Processador: Intel Core i5-3470 or AMD FX-6300 Memória: 6 GB de RAM Placa de vídeo: NVIDIA GeForce GTX 750 Ti, 4GB or AMD Radeon R7 360, 4GB or Intel Arc A310, 4GB DirectX: Versão 11 Armazenamento: 93 GB de espaço disponível Outras observações: 720p @ 30 FPS. A CPU with AVX support is required.",
+        "RequisitosRecomendados": "Requer um processador e sistema operacional de 64 bits SO: Windows 10 Processador: Intel Core i5-7600 or Ryzen 5 2600 Memória: 8 GB de RAM Placa de vídeo: NVIDIA GeForce GTX 970, 4GB or AMD Radeon RX 480, 4GB or Intel Arc A380, 6GB DirectX: Versão 11 Armazenamento: 93 GB de espaço disponível Outras observações: 1080p @ 60 FPS. A CPU with AVX support is required."
+    }
+]
