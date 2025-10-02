@@ -100,19 +100,26 @@ input:-webkit-autofill:active {
     border-color: #374975;  
 }
 
-.novidades {
+.novidades{
   position: relative;
   display: block;
 }
 
 .overlay-button{
+  border: none;  
   position: absolute;
-  top: 75%;
-  left: 72.6%;
-  transform: translate(-50%, -50%);
-  background-color: #820018;
-  color: #fff;
+  top: 29%;
+  left: 22%;
+  border-radius: none;
+  transform: translate(-100%, -100%);   
+  background-color: #3bfaa7;
+  color: #ffffff;
   font-weight: bold;
+}
+
+.overlay-button:hover{
+  background-color: #00ca72;
+  color: #ffffff;
 }
 
 .game-card {
