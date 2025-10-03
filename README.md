@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../Cloud-Games/front-end/assets/img/logo.PNG" alt="Logo Cloud Games" width="200"/>
+  <img width="1080" height="324" alt="LogoBranco" src="https://github.com/user-attachments/assets/24bf6ab9-16ae-4a84-8a13-ecfc727a7358" />  
 </p>
 
 <p align="center">
@@ -22,19 +22,14 @@ A **Cloud Games** é uma vitrine digital para entusiastas de jogos. O projeto si
 
 ## 🖼️ Telas do Projeto
 
-<p align="center">
-  <strong>Página login</strong><br><br>
-  <img src="../Cloud-Games/Telas/Tela de login2.jpg" alt="Tela Principal do Projeto Cloud Games" width="800"/>
-</p>
+![Tela de login2](https://github.com/user-attachments/assets/fb59cefc-0452-4e5e-884f-a10fae80d961)
+<img width="1880" height="918" alt="homepage01" src="https://github.com/user-attachments/assets/046c3207-6b23-4674-b81d-73770dc0f633" />
+<img width="1873" height="922" alt="homepage02" src="https://github.com/user-attachments/assets/18b1966d-ca5f-43bb-a0c1-439579e41c71" />
+<img width="1847" height="913" alt="homepage03" src="https://github.com/user-attachments/assets/e2991696-bc36-4a63-883b-a89b7bc202ce" />
+<img width="1883" height="925" alt="telacompra" src="https://github.com/user-attachments/assets/3bb374fb-118d-4325-b91f-e0b444e2d2fc" />
+<img width="1868" height="916" alt="perfil" src="https://github.com/user-attachments/assets/d5b45292-8461-49cd-91fd-733f26c670e3" />
+<img width="1881" height="921" alt="telajogo" src="https://github.com/user-attachments/assets/d467d735-a443-4aab-9eb8-2097855e93a3" />
 
-![Home Page](../Cloud-Games/Telas/Index.gif)
-![Home Page](../Cloud-Games/Telas/telaJogoePerfil.gif)
-
-
-<p align="center">
-  <strong>Carrinho/Formas de pagamento</strong><br><br>
-  <img src="../Cloud-Games/Telas/telacompra.png" alt="Página de Detalhes de um Jogo" width="800"/>
-</p>
 
 ## ✨ Funcionalidades
 
