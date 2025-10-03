@@ -66,8 +66,8 @@ function renderizarCards(jogos) {
                                     <p class="card-text">
                                         data de lançamento: 24 de fevereiro de 2017
                                     </p>
-                                    <p>
-                                        PC
+                                    <p class="card-text"><small class="text-white>
+                                        <span class="badge text-bg-primary rounded-pill">PC</span>
                                     </p>
                                     <div class="row d-flex align-items-center">
                                         <div class="col-auto">
