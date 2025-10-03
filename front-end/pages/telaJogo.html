@@ -16,8 +16,8 @@
         <div class="container px-0">
             <div class="row mt-5">
                 <div class="col">
-                    <h4>Metaphor re Fantazio
-                        <span class="badge text-bg-primary rounded-pill me-2">PC</span>
+                    <h4 id="tituloJogo">Metaphor re Fantazio
+                        <span id="plataformasBadges" class="badge text-bg-primary rounded-pill me-2">PC</span>
                         <span class="badge text-bg-primary rounded-pill">PlayStation</span>
                     </h4>
                 </div>
@@ -31,22 +31,22 @@
                         <div id="gameCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <video controls autoplay muted loop class="d-block w-100 carousel-image">
-                                        <source src="../assets/video/MetaphorTrailer.mp4" type="video/mp4">
+                                    <video controls autoplay muted loop class="d-block w-100 carousel-image" id="gameVideo">
+                                        <source src="../assets/video/MetaphorTrailer.mp4" id="videoSource" type="video/mp4">
                                     </video>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="../assets/img/metaphor/image02.jpg" class="d-block w-100 carousel-image"
+                                    <img src="../assets/img/metaphor/image02.jpg" id="imagemSlide2"  class="d-block w-100 carousel-image"
                                         alt="Imagem 2 do Jogo">
                                 </div>
 
                                 <div class="carousel-item">
-                                    <img src="../assets/img/metaphor/image03.jpg" class="d-block w-100 carousel-image"
+                                    <img src="../assets/img/metaphor/image03.jpg" id="imagemSlide3" class="d-block w-100 carousel-image"
                                         alt="Imagem 3 do Jogo">
                                 </div>
 
                                 <div class="carousel-item">
-                                    <img src="../assets/img/metaphor/image05.jpg" class="d-block w-100 carousel-image"
+                                    <img src="../assets/img/metaphor/image05.jpg" id="imagemSlide4" class="d-block w-100 carousel-image"
                                         alt="Imagem 3 do Jogo">
                                 </div>
                             </div>
@@ -56,28 +56,28 @@
                             <div class="col-3">
                                 <a href="#" data-bs-target="#gameCarousel" data-bs-slide-to="0"
                                     class="thumbnail-link active">
-                                    <img src="../assets/img/metaphor/image01.jpg" class="d-block w-100 rounded"
+                                    <img src="../assets/img/metaphor/image01.jpg" id="miniatura1" class="d-block w-100 rounded"
                                         alt="Miniatura 1">
                                 </a>
                             </div>
 
                             <div class="col-3">
                                 <a href="#" data-bs-target="#gameCarousel" data-bs-slide-to="1" class="thumbnail-link">
-                                    <img src="../assets/img/metaphor/image02.jpg" class="d-block w-100 rounded"
+                                    <img src="../assets/img/metaphor/image02.jpg" id="miniatura2" class="d-block w-100 rounded"
                                         alt="Miniatura 2">
                                 </a>
                             </div>
 
                             <div class="col-3">
                                 <a href="#" data-bs-target="#gameCarousel" data-bs-slide-to="2" class="thumbnail-link">
-                                    <img src="../assets/img/metaphor/image03.jpg" class="d-block w-100 rounded"
+                                    <img src="../assets/img/metaphor/image03.jpg" id="miniatura3" class="d-block w-100 rounded"
                                         alt="Miniatura 3">
                                 </a>
                             </div>
 
                             <div class="col-3">
                                 <a href="#" data-bs-target="#gameCarousel" data-bs-slide-to="3" class="thumbnail-link">
-                                    <img src="../assets/img/metaphor/image05.jpg" class="d-block w-100 rounded"
+                                    <img src="../assets/img/metaphor/image05.jpg" id="miniatura4" class="d-block w-100 rounded"
                                         alt="Miniatura 3">
                                 </a>
                             </div>
@@ -88,9 +88,9 @@
                     <div class="row">
                         <div class="col">
                             <div class="card ms-auto corCardGame text-white">
-                                <img src="../assets/img/metaphor/banner.jpg" class="card-img-top" alt="...">
+                                <img src="../assets/img/metaphor/banner.jpg" class="card-img-top" id="bannerLateral" alt="...">
                                 <div class="card-body">
-                                    <p class="card-text">
+                                    <p class="card-text" id="descricaoCurta">
                                         Aberto depois do assassinato, o testamento do finado rei decretava que o
                                         próximo monarca seria eleito pelo povo. Faça alianças e conquiste um reino
                                         dividido neste premiado RPG de fantasia com dinâmico combate em turnos,
@@ -105,25 +105,22 @@
                             <div class="card ms-auto corCardGame text-white h-100">
                                 <div class="card-body">
                                     <p class="card-text">
-                                        Data de Lançamento: 24/10/2024 <br>
-                                        Desenvolvimento: ATLUS <br>
-                                        Distribuidora: SEGA
+                                        <span id="dataLancamento"></span> <br>
+                                        <span id="desenvolvimento"></span> <br>
+                                        <span id="distribuidora"></span> <br>
                                     </p>
                                     <P>
                                     <h5>
                                         Categoria / Genero
                                     </H5>
-                                    <span class="badge text-bg-primary rounded-pill">JRPG</span>
-                                    <span class="badge text-bg-primary rounded-pill">RPG</span>
-                                    <span class="badge text-bg-primary rounded-pill">Ação</span>
+                                    <div id="categoriaBadges"></div>
                                     <span class="badge text-bg-primary rounded-pill">Aventura</span>
-                                    <span class="badge text-bg-primary rounded-pill">Anime</span>
                                     </P>
                                     <p>
                                     <h5>
                                         Modo de Jogo
                                     </H5>
-                                    <span class="badge text-bg-primary rounded-pill">SimglePlayer</span>
+                                    <div id="modoJogoBadges"></div>
                                     </p>
                                 </div>
                             </div>
@@ -137,7 +134,7 @@
                 </div>
                 <div class="col gx-0">
                     <div class="input-group">
-                        <button type="button" class="btn btn-secondary">R$299,00</button>
+                        <button type="button" id="precoJogo" class="btn btn-secondary">R$299,00</button>
                         <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
                     </div>
                 </div>
@@ -150,7 +147,7 @@
             <div class="row mt-4">
                 <div class="col">
                     <h5>Minimos</h5>
-                    <p>
+                    <p id="requisitosMinimos">
                         Requer um processador e sistema operacional de 64 bits <br>
                         SO: Windows 10 <br>
                         Processador: Intel Core i5-3470 or AMD FX-6300 <br>
@@ -164,7 +161,7 @@
                 </div>
                 <div class="col">
                     <h5>Recomendados</h5>
-                    <p>
+                    <p id="RequisitosRecomendados">
                         Requer um processador e sistema operacional de 64 bits <br>
                         SO: Windows 10 <br>
                         Processador: Intel Core i5-7600 or Ryzen 5 2600 <br>
@@ -184,6 +181,7 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="../assets/js/java.js"></script>
+    <script src="../assets/js/telaJogo.js"></script>
 </body>
 
 </html>
