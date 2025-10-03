@@ -67,7 +67,10 @@ function renderizarCards(jogos) {
                                         data de lançamento: 24 de fevereiro de 2017
                                     </p>
                                     <p>
-                                       
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                           <i class="bi bi-pc-display"></i>
+                                        </svg>
+                                        PC
                                     </p>
                                     <div class="row d-flex align-items-center">
                                         <div class="col-auto">
