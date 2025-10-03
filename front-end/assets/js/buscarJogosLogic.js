@@ -68,6 +68,7 @@ function renderizarCards(jogos) {
                                     </p>
                                     <p class="card-text"><small class="text-white>
                                         <span class="badge text-bg-primary rounded-pill">PC</span>
+                                        </small>
                                     </p>
                                     <div class="row d-flex align-items-center">
                                         <div class="col-auto">
